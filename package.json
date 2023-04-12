@@ -1,0 +1,24 @@
+{
+  "name": "dwpci-awesome-app",
+  "version": "0.0.0",
+  "description": "Proyecto 1 Desarrollo Web en pila completa I ITGAM",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rivalcoba-dev/dwpcI-awesome-app.git"
+  },
+  "keywords": [
+    "Express",
+    "ITGAM",
+    "DWPCI"
+  ],
+  "author": "@rivalcoba",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rivalcoba-dev/dwpcI-awesome-app/issues"
+  },
+  "homepage": "https://github.com/rivalcoba-dev/dwpcI-awesome-app#readme"
+}
