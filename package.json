@@ -2,6 +2,8 @@
   "name": "dwpci-awesome-app",
   "version": "0.0.0",
   "description": "Proyecto 1 Desarrollo Web en pila completa I ITGAM",
+  "type": "module",
+  "engines": {"node": "18.x", "npm":"9.x"},
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
