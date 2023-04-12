@@ -3,10 +3,13 @@
   "version": "0.0.0",
   "description": "Proyecto 1 Desarrollo Web en pila completa I ITGAM",
   "type": "module",
-  "engines": {"node": "18.x", "npm":"9.x"},
+  "engines": {
+    "node": "18.x",
+    "npm": "9.x"
+  },
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./app.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/rivalcoba-dev/dwpcI-awesome-app/issues"
   },
-  "homepage": "https://github.com/rivalcoba-dev/dwpcI-awesome-app#readme"
+  "homepage": "https://github.com/rivalcoba-dev/dwpcI-awesome-app#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
