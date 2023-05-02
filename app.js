@@ -7,6 +7,13 @@ import express from 'express';
 // que basicamente es un middleware
 const app = express();
 
+// Registrando el primer middleware
+app.use((req, res, next)=>{
+  console.log("📢 Middleware #1");
+  // Se invoca al siguiente middlware
+  next();
+});
+
 // Asignando el middleware de express
 // al servidor http
 const server = http.createServer(app);
