@@ -14,7 +14,7 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 
 // Se agrega ruta de administrador
-app.use(adminRouter);
+app.use('/admin', adminRouter);
 // Se agrega ruta shop
 app.use(shopRouter);
 
