@@ -1,6 +1,6 @@
 // Importando Express
 import express from 'express';
-import httpStatus from 'http-status';
+
 
 // Template Engine
 import { engine } from 'express-handlebars';
@@ -8,6 +8,9 @@ import { engine } from 'express-handlebars';
 // Importando el enrutador
 import adminRouter from './routes/admin.route.js';
 import shopRouter from './routes/shop.route.js';
+
+// Importando function get404 de controlador httpErrors
+import { get404 } from './controllers/httpErrors.controller.js';
 
 // Importando el directorio raiz
 import { ROOT_DIR } from './helpers/paths.js'
@@ -50,10 +53,7 @@ app.use(shopRouter);
 
 // Registrando el middleware para el error
 // 404
-app.use((req, res, next) => {
-  res.status(httpStatus.NOT_FOUND)
-  .sendFile(path.resolve('views','404.html'))
-});
+app.use(get404);
 
 // Definiendo puertos
 const port = 3000;
