@@ -1,0 +1,25 @@
+{
+  "name": "dwpci-awesome-app-2024a",
+  "version": "0.0.0",
+  "description": "Proyecto de clase de la materia de DWPCI 2024A",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rivalcoba-dev/dwpcI-awesome-app-2023a.git#class-2024A"
+  },
+  "keywords": [
+    "Express",
+    "ITGAM",
+    "DWPCI",
+    "Javascript"
+  ],
+  "author": "@rivalcoba",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rivalcoba-dev/dwpcI-awesome-app-2023a/issues"
+  },
+  "homepage": "https://github.com/rivalcoba-dev/dwpcI-awesome-app-2023a/tree/class-2024A#readme"
+}
