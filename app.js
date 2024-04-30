@@ -4,6 +4,9 @@ import express from 'express'
 // Creando una instancia de express
 const app = express();
 
+// Se registra el middleware body-parser
+app.use(express.urlencoded({extended: true}));
+
 // Ruta About
 // GET /about
 app.use('/about', (req, res) =>{
@@ -17,10 +20,7 @@ app.use('/about', (req, res) =>{
 
 // Recurso que sirve el formulario web
 // GET '/add-product'
-app.use('/add-product', (req, res, next)=>{
-  // Si la petición es post pasamos al sig middleware
-  if(req.method === 'POST') return next();
-
+app.get('/add-product', (req, res, next)=>{
   // Servir el formulario
   console.log('📢 Sirviendo Fomrulario...');
   res.send(`
@@ -35,13 +35,11 @@ app.use('/add-product', (req, res, next)=>{
 });
 
 // POST '/add-product'
-app.use('/add-product', (req, res)=>{
+app.post('/add-product', (req, res)=>{
   // Realizamos la extracción de
   // los parámetros dentro de la petición
-  for (const prop in req) {
-    console.log(`Prop: ${prop}`);
-  }
-  return res.redirect('/');
+  return res.json(req.body);
+  // return res.redirect('/');
 });
 
 // Ruta Raiz
